@@ -14,3 +14,11 @@ repositories {
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
+
+tasks {
+    sourceSets {
+        main {
+            java.srcDirs("src")
+        }
+    }
+}
